@@ -262,6 +262,7 @@ section .title::after {
 .teams {
   color: #fff;
   background: #e4702b;
+  align-items: center;
 }
 .services .title::before,
 .teams .title::before {
@@ -403,20 +404,41 @@ h1 {
 }
 
 /* teams section styling */
-.container-s {
+.row {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  padding-left: 21%;
+  padding-right: 20%;
 }
+/* Style the counter cards */
 .social-container {
-  height: auto;
   width: 80%;
-  margin: 2rem;
-}
-.social {
   height: auto;
-  width: 15%;
+  align-items: center;
+  justify-content: center;
+  padding:2rem;
+  padding-bottom: 0rem;
 }
+
+.social {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 990px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
 /* footer section styling */
 footer {
   background: #111;
