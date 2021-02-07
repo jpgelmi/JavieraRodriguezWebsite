@@ -1,5 +1,34 @@
 /*  import google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+@font-face {
+  font-family: 'Cocogoose';
+  src: url("./fonts/Cocogoose/Cocogoose.eot");
+  src: url('./fonts/Cocogoose/?#iefix') format('embedded-opentype'),
+       url('./fonts/Cocogoose/Cocogoose.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CocogoosePro-Italic';
+  src: url('./fonts/Cocogoose/CocogoosePro-Italic.svg#CocogoosePro-Italic') format('svg'),
+       url('./fonts/Cocogoose/CocogoosePro-Italic.ttf') format('truetype'),
+       url('./fonts/Cocogoose/CocogoosePro-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("./fonts/Myriad/MyriadPro-BlackSemiCn.eot");
+  src: url('./fonts/Myriad/?#iefix') format('embedded-opentype'),
+       url('./fonts/Myriad/MyriadPro-BlackSemiCn.svg#MyriadPro-BlackSemiCn') format('svg'),
+       url('./fonts/Myriad/MyriadPro-BlackSemiCn.ttf') format('truetype'),
+       url('./fonts/Myriad/MyriadPro-BlackSemiCn.woff') format('woff'),
+       url('./fonts/Myriad/MyriadPro-BlackSemiCn.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 * {
   margin: 0;
@@ -41,7 +70,7 @@ section {
 .teams,
 .contact,
 footer {
-  font-family: "Poppins", sans-serif;
+  font-family: MyriadPro;
 }
 .about .about-content,
 .services .serv-content,
@@ -59,7 +88,7 @@ section .title {
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: Cocogoose;
 }
 section .title::before {
   content: "";
@@ -88,7 +117,7 @@ section .title::after {
   width: 100%;
   z-index: 999;
   padding: 30px 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: Cocogoose;
   transition: all 0.3s ease;
 }
 .navbar.sticky {
@@ -104,6 +133,14 @@ section .title::after {
   color: #fff;
   font-size: 35px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 350px) {
+  .navbar .logo a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+  }
 }
 .navbar .logo a span {
   color: #b60a43;
@@ -175,7 +212,7 @@ section .title::after {
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Ubuntu", sans-serif;
+  font-family: Cocogoose, MyriadPro;
 }
 .home .max-width {
   margin: auto 0 auto 30px;
@@ -188,6 +225,7 @@ section .title::after {
   font-weight: 600;
   margin-left: -3px;
 }
+
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
@@ -225,6 +263,15 @@ section .title::after {
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
+}
+
+@media (max-width: 300px) {
+  .about .about-content .left img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
 }
 .about .about-content .right {
   width: 55%;
@@ -266,7 +313,7 @@ section .title::after {
 }
 .services .title::before,
 .teams .title::before {
-  background: #fff;
+  background: #b60a43;
 }
 .services .title::after,
 .teams .title::after {
@@ -275,7 +322,7 @@ section .title::after {
 }
 .services .serv-content .card {
   width: calc(33% - 20px);
-  background: #222;
+  background: #b60a43;
   text-align: center;
   border-radius: 6px;
   padding: 20px 25px;
@@ -283,7 +330,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .services .serv-content .card:hover {
-  background: #b60a43;
+  background: #e4702b;
 }
 .services .serv-content .card .box {
   transition: all 0.3s ease;
@@ -409,9 +456,58 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-left: 21%;
-  padding-right: 20%;
+  padding-left: 29%;
+  padding-right: 25%;
 }
+.social-content .right-s a {
+  display: flex;
+  background: #b60a43;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 2rem 1rem;
+  margin-top: 3.5rem;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 6px;
+  border: 2px solid #b60a43;
+  transition: all 0.3s ease;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.social-content .right-s a:hover {
+  color: #b60a43;
+  background: none;
+}
+
+.content{
+  align-items: center;
+  justify-content: center;
+  padding-right: auto;
+  padding-left: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .social-content .right-s a {
+    display: flex;
+    background: #b60a43;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 2rem 1rem;
+    margin-top: 3.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 6px;
+    border: 2px solid #b60a43;
+    transition: all 0.3s ease;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+}
+
 /* Style the counter cards */
 .social-container {
   width: 80%;
@@ -423,10 +519,9 @@ h1 {
 }
 
 .social {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
-
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 990px) {
   .row {
@@ -436,6 +531,18 @@ h1 {
     justify-content: center;
     padding-left: 2%;
     padding-right: 2%;
+  }
+  .social-container {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+    padding-bottom: 0rem;
+  }
+  .social {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -582,4 +689,33 @@ footer span a:hover {
     font-size: 23px;
     line-height: 38px;
   }
+}
+
+@media (max-width: 350px) {
+  .home .home-content .text-2 {
+    font-size: 40px;
+  }
+  .home .home-content .text-3 {
+    font-size: 27px;
+  }
+  .about .about-content .right .text,
+  .skills .skills-content .left .text {
+    font-size: 19px;
+  }
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+  }
+
 }
