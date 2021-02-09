@@ -250,7 +250,9 @@ section .title::after {
   color: #b60a43;
   background: none;
 }
-
+.clor-r{
+  color:#b60a43;
+}
 /* about section styling */
 
 .about .title::after {
@@ -520,12 +522,12 @@ h1 {
   height: auto;
   align-items: center;
   justify-content: center;
-  padding:2rem;
+  padding:1rem;
   padding-bottom: 0rem;
 }
 
 .social {
-  width: 50%;
+  width:60%;
   height: auto;
 }
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -543,7 +545,7 @@ h1 {
     height: auto;
     align-items: center;
     justify-content: center;
-    padding:2rem;
+    padding:1rem;
     padding-bottom: 0rem;
   }
   .social {
