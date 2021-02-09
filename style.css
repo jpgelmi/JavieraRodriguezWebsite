@@ -252,6 +252,7 @@ section .title::after {
 }
 
 /* about section styling */
+
 .about .title::after {
   content: "";
 }
@@ -262,7 +263,7 @@ section .title::after {
   height: 400px;
   width: 400px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 100%;
 }
 
 @media (max-width: 300px) {
@@ -464,15 +465,21 @@ h1 {
   color: #fff;
   font-size: 2rem;
   font-weight: 500;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   margin-top: 3.5rem;
   margin-left: 35%;
   margin-right: 35%;
   border-radius: 6px;
   border: 2px solid #b60a43;
   transition: all 0.3s ease;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+}
+.center{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
 }
 
 .social-content .right-s a:hover {
@@ -501,7 +508,7 @@ h1 {
     border-radius: 6px;
     border: 2px solid #b60a43;
     transition: all 0.3s ease;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
   }
 
