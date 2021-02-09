@@ -505,9 +505,11 @@ h1 {
     font-weight: 500;
     padding: 2rem 1rem;
     margin-top: 3.5rem;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     border-radius: 6px;
+    padding-right: 100px;
+    padding-left: 100px;
     border: 2px solid #b60a43;
     transition: all 0.3s ease;
     align-items: center;
