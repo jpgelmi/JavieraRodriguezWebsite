@@ -431,7 +431,7 @@ h1 {
   }
   .gallery {
     flex-direction: row;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     padding: 5px;
     background: #fff;
