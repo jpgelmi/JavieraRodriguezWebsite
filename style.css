@@ -309,6 +309,12 @@ section .title::after {
   background: none;
 }
 
+.collaps{
+  display: flex;
+  flex-direction: column;
+  width: 16rem;
+
+}
 /* services section styling */
 .services,
 .teams {
