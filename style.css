@@ -230,12 +230,25 @@ section .title::after {
   }
 }
 
+@media (max-width: 768px) {
+  .home {
+    display: flex;
+    background: url("images/bannerIpad.png") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Cocogoose, MyriadPro;
+  }
+}
 
 .home .max-width {
   margin: auto 0 auto 30px;
 }
 .home .home-content .text-1 {
   font-size: 27px;
+  margin-top: 15rem;
 }
 .home .home-content .text-2 {
   font-size: 75px;
@@ -735,6 +748,11 @@ footer span a:hover {
 }
 
 @media (max-width: 350px) {
+
+  .home .home-content .text-1 {
+    font-size: 27px;
+    margin-top: 11rem;
+  }
   .home .home-content .text-2 {
     font-size: 40px;
   }
