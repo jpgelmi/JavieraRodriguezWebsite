@@ -506,8 +506,8 @@ h1 {
   font-weight: 500;
   padding: 1rem 1rem;
   margin-top: 3.5rem;
-  margin-left: 35%;
-  margin-right: 35%;
+  margin-left: 25%;
+  margin-right: 25%;
   border-radius: 6px;
   border: 2px solid #b60a43;
   transition: all 0.3s ease;
@@ -542,11 +542,33 @@ h1 {
     font-weight: 500;
     padding: 2rem 1rem;
     margin-top: 3.5rem;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 6px;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border: 2px solid #b60a43;
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+  .social-content .right-s a {
+    display: flex;
+    background: #b60a43;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 2rem 1rem;
+    margin-top: 3.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
     border: 2px solid #b60a43;
     transition: all 0.3s ease;
     align-items: center;
@@ -607,7 +629,17 @@ footer span a {
 footer span a:hover {
   text-decoration: underline;
 }
+.boton-peque{
+  background-color: #e4702b !important;
+  border-color: #e4702b !important;
+  margin-top: 0.5rem !important;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0rem;
+  font-weight: 200 !important;
+  font-size: 1.5rem !important;
 
+}
 /* responsive media query start */
 @media (max-width: 1300px) {
   .home .max-width {
@@ -741,7 +773,7 @@ footer span a:hover {
     right: 30px;
     bottom: 15px;
     height: 38px;
-    width: 35px
+    width: 35px;
     margin-right: 80%;
     margin-bottom: 1rem;
   }
