@@ -230,7 +230,7 @@ section .title::after {
   }
 }
 
-@media (max-width: 768px) {
+@media (width: 768px) {
   .home {
     display: flex;
     background: url("images/bannerIpad.png") no-repeat center;
