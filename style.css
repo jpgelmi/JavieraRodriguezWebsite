@@ -188,7 +188,7 @@ section .title::after {
   pointer-events: none;
   transition: all 0.3s ease;
   opacity: 0;
-  margin:1rem;
+  margin-right: 90vw;
 }
 .scroll-up-btn.show {
   bottom: 30px;
@@ -208,7 +208,7 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("images/banner.jpg") no-repeat center;
+  background: url("images/banner.png") no-repeat center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -216,6 +216,21 @@ section .title::after {
   background-attachment: fixed;
   font-family: Cocogoose, MyriadPro;
 }
+
+@media (max-width: 900px) {
+  .home {
+    display: flex;
+    background: url("images/bannerMovil.png") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Cocogoose, MyriadPro;
+  }
+}
+
+
 .home .max-width {
   margin: auto 0 auto 30px;
 }
@@ -298,7 +313,7 @@ section .title::after {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
-  padding: 10px 30px;
+  padding: 10px 35px;
   margin-top: 20px;
   border-radius: 6px;
   border: 2px solid #b60a43;
@@ -681,6 +696,8 @@ footer span a:hover {
     width: 100%;
   }
   .scroll-up-btn {
+    margin-right: 80%;
+    margin-bottom: 1rem;
     right: 50px;
     bottom: 15px;
     height: 38px;
@@ -712,6 +729,8 @@ footer span a:hover {
     bottom: 15px;
     height: 38px;
     width: 35px
+    margin-right: 80%;
+    margin-bottom: 1rem;
   }
 }
 
@@ -738,6 +757,8 @@ footer span a:hover {
     bottom: 15px;
     height: 38px;
     width: 35px;
+    margin-right: 80%;
+    margin-bottom: 1rem;
   }
 
 }
